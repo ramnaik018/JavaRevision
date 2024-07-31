@@ -1,12 +1,11 @@
 
 package Interfaces;
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Collections;
 
 public class Main {
     public static void main(String[] args) {
-        List<Student> list=new ArrayList<>();
+        // This is code for Student class to implement Comparable Interface.
+        //
+/*        List<Student> list=new ArrayList<>();
         Student s1=new Student("Ram",2);
         Student s2=new Student("Leela",1);
         Student s3=new Student("Ravi",3);
@@ -23,6 +22,14 @@ public class Main {
         for (Student student : list) {
             System.out.print(student.name + " "+student.rank+" ");
         }
+*/
 
+        // this is usage of Shape Interface by circle and square.
+        Circle c=new Circle();
+        Square s=new Square();
+        c.name();
+        s.name();
+        c.tell();
+        s.tell();
     }
 }
