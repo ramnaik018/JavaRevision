@@ -53,6 +53,20 @@ public class Main {
         num.add(0);num.add(9);num.add(2);num.add(8);num.add(3);num.add(7);num.add(4);
         System.out.println("--------------------------");
         bwc.print2(num);
+
+
+        OrderedPair<Integer,Integer> p1=new OrderedPair<>(4,9);
+        OrderedPair<String,Double> p2=new OrderedPair<>("Ram",1.0);
+
+        System.out.println(p1.getKey()+" "+p1.getValue());
+        System.out.println(p2.getKey()+" "+p2.getValue());
+        System.out.println("--------------------------");
+        TypeErasure<String> te1=new TypeErasure<>();
+        te1.setName("Ram");
+        System.out.println(te1.getName());
+        TypeErasure<Integer> te2=new TypeErasure<>();
+        te2.setName(6);
+        System.out.println(te2.getName());
     }
 
 }
