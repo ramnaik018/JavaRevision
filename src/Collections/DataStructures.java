@@ -6,7 +6,7 @@ import java.util.Deque;
 import java.util.ArrayDeque;
 import java.util.LinkedList;
 import java.util.ArrayList;
-
+import java.util.Iterator;
 
 
 public class DataStructures {
@@ -60,6 +60,12 @@ public class DataStructures {
         dq.addFirst(9);dq.addFirst(10);dq.addFirst(3);
         dq.addLast(29);dq.addLast(98);
         printDq(dq);// 3 10 9 29 98
+        System.out.println("-------------------------------Iterator");
+        Iterator<Integer> it=lis.iterator();
+        while(it.hasNext()){
+            System.out.println(it.next());
+        }
+
         System.out.println("Similarly we can also impliment HashSet , LinkedHashSet and TreeSet" +
                 "Where HashSet is just a normal set and contains elements in random order" +
                 "And LinkedHashSet contains elements in the way they are inserted " +

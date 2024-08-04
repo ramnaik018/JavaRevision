@@ -2,6 +2,7 @@ package Sorting;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.function.Function;
 
 
 public class Main {
@@ -30,7 +31,7 @@ public class Main {
         }
 
         Collections.sort(clgs);
-        Collections.sort(cities,new CityComparator());
+        cities.sort(new CityComparator());
 
         System.out.println("After sorting");
         System.out.println();
